@@ -4,6 +4,7 @@ const app=express()
 const main=require('./database/db')
 const cors=require('cors')
 const router = require('./routes/userRoutes')
+require('dotenv').config()
 
 main()
 app.use(express.json())

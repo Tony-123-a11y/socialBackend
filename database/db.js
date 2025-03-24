@@ -1,7 +1,9 @@
 const mongoose=require('mongoose')
+require('dotenv').config()
+
 async function main(){
      try{
-        mongoose.connect('mongodb://127.0.0.1:27017/socailMedia')
+        mongoose.connect(process.env.MongoDB_URL)
         console.log('server connected successfully')
         
      }
